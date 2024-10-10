@@ -1,6 +1,9 @@
-import java.util.Arrays;
+// package LeetCode.Easy;
 
-public class SumOfTwoNo {
+import java.util.Arrays;
+public class SumOfTwoNum {
+
+
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
 
@@ -17,10 +20,12 @@ public class SumOfTwoNo {
         return result;
     }
     public static void main(String[] args) {
-        SumOfTwoNo sum = new SumOfTwoNo();
+        SumOfTwoNum sum = new SumOfTwoNum();
         int[] nums = {2, 7, 11, 15};
         int target = 9 ;
         int[] result = sum.twoSum(nums, target);
         System.out.println(Arrays.toString(result));
     }
 }
+
+
