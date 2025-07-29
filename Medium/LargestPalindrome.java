@@ -85,3 +85,33 @@ public class LargestPalindrome {
         System.out.println(longestPalindrome("aaaabbaa")); //aabbaa
     }
 }
+// method 
+
+// public String largestPali(String s){
+//     int n = s.length();
+//     if(n == 1 || n = 0){
+//         return s;
+//     }
+//     int start = 0 ;
+//     int end = 0;
+
+//     for(int i = 0 ; i < n ; i++){
+//         //odd
+//         int oddLength = func(s, i, i);
+//         int evenLength = func(s, i, i+1);
+//         int largestPali = Math.max(oddLength, evenLength);
+//         if(largestPali > (end - start)){
+//             start = i - (largestPali - 1) / 2 ;
+//             end = i + largestPali / 2 ;
+//         }
+
+//     }
+//     return s.substring(start,end+1);
+// }
+// public int func(String s , int start , int end){
+//     while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)){
+//         start++;
+//         end--;
+//     }
+//     return end-start-1;
+// }
